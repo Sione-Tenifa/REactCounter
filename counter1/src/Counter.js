@@ -17,11 +17,12 @@ class Counter extends React.Component {
 
   render() {
     return (
-      <div>
-        <p>{this.state.value}</p>
-        <button onClick={this.inc}>+</button>
-        <button onClick={this.dec}>-</button>
-      </div>
+    <div style={{ backgroundColor: this.props.name, color: 'white' }}>
+      <p>{this.props.name} counter</p>
+      <p>{this.state.value}</p>
+      <button onClick={this.inc}>+</button>
+      <button onClick={this.dec}>-</button>
+    </div>
     )
   }
 }
